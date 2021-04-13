@@ -1,7 +1,11 @@
-extends pug/base
+extends pug/base 
+
 prepend vars
+
 append vars
+
 block content
+
 	.wrapper
 		header.header
 			.container
@@ -71,7 +75,7 @@ block content
 						p.work__desc
 							| Верстка и разработка GUI под
 							a.link(href="https://bitbucket.org/chromiumembedded/cef/src" target="_blank")
-								| CEF
+								|  CEF
 							br
 							| Демо для просмотра некоторых менюшек задеплоено на netlify, больше половины не работает, т.к. основные данные для вывода лежат на сервере, а то что отображается забито тестовыми данными в vuex
 					li.work
