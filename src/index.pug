@@ -1,10 +1,105 @@
 extends pug/base
-
 prepend vars
-	//-
-
 append vars
-	//-
-
 block content
-	//-
+	.wrapper
+		header.header
+			.container
+				nav.header__menu
+					a.header__menu-link(href="#works")
+						| Мои работы
+					a.header__menu-link(href="#blog")
+						| Блог
+					a.header__menu-link(href="#contacts")
+						| Контакты
+				.header-content
+					.header-block
+						h1.header__title
+							p
+								| Михаил Дроботов
+							p
+								| Frontend-разработчик
+						h2.header__description
+							| Занимаюсь версткой сайтов а также разработкой приложений с использованием фреймворка Vue.js
+						a.header__btn.btn.btn--primary(href="https://murmansk.hh.ru/resume/d52d7925ff0252ee1e0039ed1f634f46357853" target="_blank")
+							| Скачать резюме
+					.header-block
+						img.header__avatar(src="images/avatar.png" alt="avatar")
+
+		section.portfolio#works
+			.container
+				h1.section-title
+					| Мои работы
+				ul.works
+					li.work
+						img.work__image(src="images/work1.png" alt="work1")
+						a.work__title(href="https://fortisrp-site-v1.netlify.app/" target="_blank")
+							| Fortis Roleplay v.1
+						ul.work-tags
+							li.work-tags__year
+								| 2020
+							li.work-tags__theme
+								| Верстка сайта
+						p.work__desc
+							| Первая версия сайта для игрового проекта fortis roleplay в игре GTA 5
+							br
+							| Простейший сайт без использования сторонних библиотек и cms
+					li.work
+						img.work__image(src="images/work2.png" alt="work2")
+						a.work__title(href="https://fortisrp-site-v2.netlify.app/" target="_blank")
+							| Fortis Roleplay v.2
+						ul.work-tags
+							li.work-tags__year
+								| 2020
+							li.work-tags__theme
+								| Верстка сайта
+						p.work__desc
+							| Вторая версия сайта для игрового проекта fortis roleplay в игре GTA 5 с
+							| использованием плагина fullpage scroll, animate.css и
+							| и все это сделано в виде MPA на Vue.js
+					li.work
+						img.work__image(src="images/work3.png" alt="work3")
+						a.work__title(href="https://fortis-web.netlify.app/" target="_blank")
+							| Fortis Roleplay GUI
+						ul.work-tags
+							li.work-tags__year
+								| 2019-2021
+							li.work-tags__theme
+								| Верстка GUI
+							li.work-tags__theme
+								| Vue.js SPA
+						p.work__desc
+							| Верстка и разработка GUI под
+							a.link(href="https://bitbucket.org/chromiumembedded/cef/src" target="_blank")
+								| CEF
+							br
+							| Демо для просмотра некоторых менюшек задеплоено на netlify, больше половины не работает, т.к. основные данные для вывода лежат на сервере, а то что отображается забито тестовыми данными в vuex
+					li.work
+						img.work__image(src="images/work4.png" alt="work4")
+						a.work__title(href="https://ldarksoull.github.io/netgowifi" target="_blank")
+							| Netgowifi.com
+						ul.work-tags
+							li.work-tags__year
+								| 2018
+							li.work-tags__theme
+								| Верстка многостраничного сайта
+							li.work-tags__theme
+								| Bootstrap
+						p.work__desc
+							| Первая коммерческая работа для компании
+							a.link(href="https://netgowifi.com/" target="_blank")
+								| Netgowifi.com
+
+		footer.footer
+			.container
+				ul.social
+					li.social__item
+						a.social__item-link(href="https://t.me/Quaden" target="_blank")
+							img.social__item-image(src="/images/sprites/svg/telegram.svg" alt="telegram")
+					li.social__item
+						a.social__item-link(href="https://vk.com/quadens" target="_blank")
+							img.social__item-image(src="/images/sprites/svg/vk.svg" alt="vk")
+				p.footer__copy
+					| Drobotov Mikhail
+					br
+					| Copyright ©2021 All rights reserved

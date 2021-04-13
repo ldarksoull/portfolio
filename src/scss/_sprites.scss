@@ -1,4 +1,105 @@
-$sprites: ();
+$sprites: (
+	"avatar": (
+		normal: (
+			x: 0,
+			y: 0,
+			width: 506,
+			height: 506,
+			image: "sprites.png",
+			total_width: 896,
+			total_height: 698,
+		),
+		retina: (
+			x: 0,
+			y: 0,
+			width: 1012,
+			height: 1012,
+			image: "sprites@2x.png",
+			total_width: 1792,
+			total_height: 1396,
+		),
+	),
+	"work1": (
+		normal: (
+			x: 508,
+			y: 0,
+			width: 388,
+			height: 191,
+			image: "sprites.png",
+			total_width: 896,
+			total_height: 698,
+		),
+		retina: (
+			x: 1016,
+			y: 0,
+			width: 776,
+			height: 382,
+			image: "sprites@2x.png",
+			total_width: 1792,
+			total_height: 1396,
+		),
+	),
+	"work2": (
+		normal: (
+			x: 390,
+			y: 508,
+			width: 388,
+			height: 189,
+			image: "sprites.png",
+			total_width: 896,
+			total_height: 698,
+		),
+		retina: (
+			x: 780,
+			y: 1016,
+			width: 776,
+			height: 378,
+			image: "sprites@2x.png",
+			total_width: 1792,
+			total_height: 1396,
+		),
+	),
+	"work3": (
+		normal: (
+			x: 0,
+			y: 508,
+			width: 388,
+			height: 190,
+			image: "sprites.png",
+			total_width: 896,
+			total_height: 698,
+		),
+		retina: (
+			x: 0,
+			y: 1016,
+			width: 776,
+			height: 380,
+			image: "sprites@2x.png",
+			total_width: 1792,
+			total_height: 1396,
+		),
+	),
+	"work4": (
+		normal: (
+			x: 508,
+			y: 193,
+			width: 388,
+			height: 191,
+			image: "sprites.png",
+			total_width: 896,
+			total_height: 698,
+		),
+		retina: (
+			x: 1016,
+			y: 386,
+			width: 776,
+			height: 382,
+			image: "sprites@2x.png",
+			total_width: 1792,
+			total_height: 1396,
+		),
+	),
+);
 
 @each $name in map-keys($sprites) {
 	.sprite-#{$name} {

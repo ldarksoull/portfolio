@@ -1,11 +1,14 @@
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 html {
-	box-sizing: border-box;
+	font-family: $font-family-roboto;
+	font-weight: 400;
+	font-size: 16px;
+	font-style: normal;
 	scroll-behavior: smooth;
 }
 
@@ -20,4 +23,181 @@ body {
 button:not([disabled]),
 a[role="button"]:not([disabled]) {
 	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1, 
+h2, 
+ul, 
+li, 
+p {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	display: block;
+}
+
+.btn {
+	padding: 0.5rem 1rem;
+	font-weight: 500;
+	font-size: 1.3rem;
+
+	&--primary{
+		color: $color-white;
+		background: $color-primary;
+	}
+}
+.link{
+	font-weight: bold;
+	color: $color-BlueZodiac;
+}
+
+.wrapper {
+	width: 100%;
+}
+.container {
+	padding: 0 20px;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	&__menu {
+		display: flex;
+		margin-left: auto;
+		gap: 30px;
+		padding: 40px 0;
+	}
+	&__menu-link {
+		display: inline-flex;
+		font-weight: 500;
+		font-size: 20px;
+		color: #000000;
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 2.5rem;
+		line-height: 1.3;
+		color: $color-dark;
+		margin: 2rem 0;
+	}
+	&__description {
+		font-weight: normal;
+		font-size: 1rem;
+		line-height: 1.5;
+		color: $color-dark;
+		margin: 2rem 0;
+	}
+	&__avatar {
+		display: block;
+		transform: scale(1.05);
+		border-radius: 50%;
+		max-width: 250px;
+		margin: 2rem 0;
+	}
+	&__btn {
+		border-radius: 2px;
+		margin: 2rem 0;
+	}
+}
+
+.header-content {
+	display: flex;
+	align-items: flex-start;
+	gap: 200px;
+	padding: 100px 0;
+}
+
+.section-title {
+	font-size: 2rem;
+	font-weight: normal;
+	color: $color-dark;
+}
+
+.portfolio {
+	background: $color-AquaSpring;
+	padding: 2rem 0;
+}
+
+.works {
+	margin: 1em 0;
+}
+
+.work {
+	padding: 1em 0;
+	border-bottom: 1px solid #e0e0e0;
+	display: grid;
+	grid-template-columns: minmax(150px, min-content) 1fr;
+  grid-template-rows: auto auto 1fr;
+  gap: 0.5em 1em;
+  grid-template-areas:
+    "image title"
+    "image tags"
+    "image desc";
+	&__image{
+		grid-area: image;
+	}
+	&__title { 
+		grid-area: title; 
+		font-weight: bold;
+		font-size: 2rem;
+		line-height: 1;
+		color: $color-dark;
+	}
+	&-tags { 
+		grid-area: tags;
+		align-content: start; 
+		display: flex;
+		align-items: center;
+		gap: 1em;
+		&__year{
+			background: $color-BlueZodiac;
+			border-radius: 16px;
+			line-height: 1;
+			color: $color-white;
+			padding: 0.25rem 0.5rem;
+			font-weight: bold;
+		}
+		&__theme{
+			color: $color-RegentGray;
+			font-weight: normal;
+			font-size: 1.1rem;
+		}
+	}
+	&__desc { 
+		grid-area: desc; 
+		line-height: 1.25;
+	}
+}
+
+.footer{
+	padding: 2rem 0;
+	&__copy{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+.social{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
+	gap: 1em;
+	&__item-image{
+		width: 2rem;
+	}
+
 }
