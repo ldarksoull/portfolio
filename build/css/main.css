@@ -602,8 +602,10 @@ img {
     -ms-grid-row: 1;
     -ms-grid-row-span: 5;
     -ms-grid-column: 1;
-    grid-area: image;
-    max-width: 100%; }
+    grid-area: image; }
+    @media (max-width: 800px) {
+      .work__image {
+        max-width: 100%; } }
   .work__title {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
