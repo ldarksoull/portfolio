@@ -188,8 +188,11 @@ img {
 	}
 	&__image{
 		grid-area: image;
+		width: 388px;
+		height: 191px;
 		@media(max-width: 800px){
 			max-width: 100%;
+			height: auto;
 		}
 	}
 	&__title { 

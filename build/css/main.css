@@ -602,10 +602,13 @@ img {
     -ms-grid-row: 1;
     -ms-grid-row-span: 5;
     -ms-grid-column: 1;
-    grid-area: image; }
+    grid-area: image;
+    width: 388px;
+    height: 191px; }
     @media (max-width: 800px) {
       .work__image {
-        max-width: 100%; } }
+        max-width: 100%;
+        height: auto; } }
   .work__title {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
